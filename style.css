@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex; 
+}
+
+.small-palette-box {
+    width: 250px;
+    padding: 20px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.small-palette-box > svg {
+    width: 250px;
+    height: 200px;
+}
+
+.color-line, .color-code rect {
+    width: 250px;
+    height: 50px;
+}
+
+.color-code {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.color-code > rect {
+    fill:rgba(0, 0, 0, 0.0)
+}
+
+.color-code:hover {
+    opacity: 1;
+}
+
+.color-code text:hover {
+    fill:white;
+}
+
+.color-code > .text-contrast {
+    fill:rgba(0, 0, 0, 0.4)
+}
