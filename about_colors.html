@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <!-- BOTAR ISSO DEPOIS DENTRO DO CSS-->
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        header{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .layout_2colunas {
+            display: flex;
+            text-align: center;
+        }
+
+        .colunas {
+            flex: 50%;
+            padding: 10px;
+        }
+
+        #esquerda_rgb{
+            background-color: powderblue;
+        }
+
+        .left_rgbimage{
+            float: left;
+        }
+
+        #direta_cmyk{
+            background-color: rgb(255,255,153);
+        }
+
+        .right_cmykimage{
+            float: right;
+        }
+
+        #esquerda_frias {
+            background-color: cyan;
+        }
+
+        .cyan_button {
+            background-image: url(images/cyan_cube.png);
+            height: 153px;
+            width: 153px;
+            cursor: pointer;
+        }
+
+        .blue_button {
+            background-image: url(images/blue_cube.png);
+            height: 153px;
+            width: 153px;
+            cursor: pointer;
+        }
+
+        .green_button {
+            background-image: url(images/green_cube.png);
+            height: 153px;
+            width: 153px;
+            cursor: pointer;
+        }
+
+        #direita_quentes {
+            background-color: yellow;
+        }
+
+        .yellow_button {
+            background-image: url(images/yellow_cube.png);
+            height: 153px;
+            width: 153px;
+            cursor: pointer;
+        }
+
+        .orange_button {
+            background-image: url(images/orange_cube.png);
+            height: 153px;
+            width: 153px;
+            cursor: pointer;
+        }
+
+        .red_button {
+            background-image: url(images/red_cube.png);
+            height: 153px;
+            width: 153px;
+            cursor: pointer;
+        }
+
+
+        @media screen and (max-width: 600px) {
+            .layout_2colunas {
+                flex-direction: column;
+            }
+        }
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Importância das cores</h1>
+
+        <cite>"Color is a power which directly influences the soul"</cite> by Wassily Kandinsky
+
+        <p><b>Cores estão presentes de diversas formas, e exercem uma grande influência em deciões.
+            As cores utilizadas em um site, por exemplo, são grandes factores para transmitir de forma correta uma
+            mensagem.</b></p>
+
+    </header>
+
+    <main>
+
+        <div class="layout_2colunas">
+            <section class="colunas" id="esquerda_rgb">
+                <h2>RGB</h2>
+
+                <p>
+                    <figure class="left_rgbimage">
+                        <img src="images/RGB.png" alt="rgb_diagram">
+                        <figcaption>
+                            <a href="https://pt.wikipedia.org/wiki/RGB#/media/Ficheiro:Synthese+.svg">Diagrama RGB</a>
+                        </figcaption>
+                    </figure>
+
+                    <br><br><br>
+                    RGB é um modelo com as cores: Vermelho, Verde e Azul. A ideia principal 
+                    desse modelo é reproduzir cores em computadores e televisões.
+                    
+                    <br><br>
+                    Esse modelo é aditivo, ou seja, a formação de outras cores se da por conta da junção das
+                    cores primárias, e é possível reproduzir inúmeras outras cores.
+                </p>
+
+            </section>
+
+            <section class="colunas" id="direta_cmyk">
+                <h2>CMYK</h2>
+
+                <p>
+                    <figure class="right_cmykimage">
+                        <img src="images/CMYK.png" alt="cmyk_diagram">
+                        <figcaption>
+                            <a href="https://pt.wikipedia.org/wiki/CMYK#/media/Ficheiro:SubtractiveColorMixing.png">Diagrama CMYK</a>
+                        </figcaption>
+                    </figure>
+                    
+                    <br><br><br>
+                    CMYK é um modelo com os pigmentos: Ciano, Magenta, Amarelo e Preto. 
+                    A ideia principal deste modelo é utilizado em impressoras e fotocopiadoras.
+                
+                    <br><br>
+                    Esse modelo é subtrativo, ou seja, funciona com a absorção de luz, e
+                    é possível extrair cores. Composto pelos pigmentos primários + preto.
+                </p>
+
+            </section>
+        </div>
+
+        <div class="layout_2colunas">
+            <section class="colunas" id="esquerda_frias">
+                <h2>Cores Frias</h2>
+
+                <p>As cores frias são associadas ao frio, serenidade e paz.</p>
+
+                <button class="cyan_button"></button>
+
+                <button class="blue_button"></button>
+
+                <button class="green_button"></button>
+
+            </section>
+
+            <section class="colunas" id="direita_quentes">
+                <h2>Cores Quentes</h2>
+
+                <p>As cores quentes são associadas com calor, energia e brilho.</p>
+
+                <button class="yellow_button"></button>
+
+                <button class="orange_button"></button>
+
+                <button class="red_button"></button>
+
+            </section>
+        </div>
+
+    </main>
+</body>
+</html>
