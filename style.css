@@ -1,29 +1,79 @@
+/* Fonte do Google Fonts */ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Estilos Globais */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-main {
-    display: flex; 
+a {
+    text-decoration: none;
+}
+
+/* Header & NavMenu */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#navbar > ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar > ul > li {
+    margin: 0px 10px;
+}
+
+/* ++++++++++++++ */
+/*  CSS DO INDEX  */
+/* ++++++++++++++ */
+
+/* Main */
+
+#index-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#palette-section {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .small-palette-box {
-    width: 250px;
-    padding: 20px;
-    margin: 5px;
-    display: flex;
+    width: 270px;
+    display:flex; 
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    padding: 10px 10px 20px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px #ddd;
 }
 
 .small-palette-box > svg {
     width: 250px;
     height: 200px;
+    border-radius: 5px;
 }
 
-.color-line, .color-code rect {
+.color-line, .overlay {
     width: 250px;
     height: 50px;
 }
@@ -33,7 +83,7 @@ main {
     transition: opacity 0.2s;
 }
 
-.color-code > rect {
+.color-code .overlay {
     fill:rgba(0, 0, 0, 0.0)
 }
 
@@ -41,10 +91,31 @@ main {
     opacity: 1;
 }
 
-.color-code text:hover {
-    fill:white;
+.color-code > .text-contrast {
+    fill:rgba(0, 0, 0, 0.4);
+    width:100px;
+    height:50px;
 }
 
-.color-code > .text-contrast {
-    fill:rgba(0, 0, 0, 0.4)
+#index-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#palette-rank  {
+    min-width: 50px;
+    width: 350px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    align-items: center;
+}
+
+#palette-categories {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
 }
