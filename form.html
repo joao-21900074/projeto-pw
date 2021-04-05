@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Paleta</title>
+
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        .box_hash {
+            position: relative;
+        }
+
+        .hex_code {
+            display: block;
+            padding-left: 12px;
+        }
+
+        .hashtag_fixo {
+            position: absolute;
+            display: block;
+            left: 5px;
+            top: 2px;
+        }
+    </style>
+
+    <p>Nesta secção é possível escolher cores para criar a sua própria paleta.
+        <br><br>
+        Pode utilizar os seletores de cores ou, numeros RGB, ou código hexadecimal.
+    </p>
+</head>
+
+<body>
+    <form method="post" action="mailto:nome.apelido@gmail.com">
+        <fieldset>
+            <legend>Adicionar Paleta Personalizada</legend>
+
+            <label for="corespaleta"><b>Selecione as cores</b>:</label>
+            <input type="color" id="cor_1" name="primeira_cor" value="#994C00">
+            <input type="color" id="cor_2" name="segunda_cor" value="#FF8000">
+            <input type="color" id="cor_3" name="terceira_cor" value="#FF3333">
+            <input type="color" id="cor_4" name="quarta_cor" value="#FF0000">
+            <br><br><br>
+
+            <label for="rgbpaleta"><b>Campos numéricos para RGB</b> <br> <i>Numeros de 0 a 255</i>:</label>
+            <br><br>
+            <label>Vermelho:</label>
+            <input type="number" id="red_number1" name="vermelho1" min="0" max="255" placeholder="0">
+            <label>Verde:</label>
+            <input type="number" id="green_number1" name="verde1" min="0" max="255" placeholder="0">
+            <label>Azul:</label>
+            <input type="number" id="blue_number1" name="azul1" min="0" max="255" placeholder="0">
+            <br><br>
+
+            <label>Vermelho:</label>
+            <input type="number" id="red_number2" name="vermelho2" min="0" max="255" placeholder="0">
+            <label>Verde:</label>
+            <input type="number" id="green_number2" name="verde2" min="0" max="255" placeholder="0">
+            <label>Azul:</label>
+            <input type="number" id="blue_number2" name="azul2" min="0" max="255" placeholder="0">
+            <br><br>
+
+            <label>Vermelho:</label>
+            <input type="number" id="red_number3" name="vermelho3" min="0" max="255" placeholder="0">
+            <label>Verde:</label>
+            <input type="number" id="green_number3" name="verde3" min="0" max="255" placeholder="0">
+            <label>Azul:</label>
+            <input type="number" id="blue_number3" name="azul3" min="0" max="255" placeholder="0">
+            <br><br>
+
+            <label>Vermelho:</label>
+            <input type="number" id="red_number4" name="vermelho4" min="0" max="255" placeholder="0">
+            <label>Verde:</label>
+            <input type="number" id="green_number4" name="verde4" min="0" max="255" placeholder="0">
+            <label>Azul:</label>
+            <input type="number" id="blue_number4" name="azul4" min="0" max="255" placeholder="0">
+            <br><br><br>
+
+            <label for="hexpaleta"><b>Campo para código Hexadecimal</b> <br>
+                <i>Deve ser composto de numeros e/ou letras</i>:</label>
+            <br><br>
+
+            <div class="box_hash">
+                <input type="text" class="hex_code" nome="codigo_hex1" autofocus="autofocus" maxlength="6"
+                    pattern="[a-zA-Z0-9-]+">
+                <span class="hashtag_fixo">#</span>
+                <br>
+            </div>
+
+            <div class="box_hash">
+                <input type="text" class="hex_code" nome="codigo_hex2" autofocus="autofocus" maxlength="6"
+                    pattern="[a-zA-Z0-9-]+">
+                <span class="hashtag_fixo">#</span>
+                <br>
+            </div>
+
+            <div class="box_hash">
+                <input type="text" class="hex_code" nome="codigo_hex3" autofocus="autofocus" maxlength="6"
+                    pattern="[a-zA-Z0-9-]+">
+                <span class="hashtag_fixo">#</span>
+                <br>
+            </div>
+
+            <div class="box_hash">
+                <input type="text" class="hex_code" nome="codigo_hex4" autofocus="autofocus" maxlength="6"
+                    pattern="[a-zA-Z0-9-]+">
+                <span class="hashtag_fixo">#</span>
+                <br><br><br>
+            </div>
+
+            <label><b>A paleta é composta de cores Quentes ou Frias?</b><br></label>
+
+            <input type="radio" id="quente" name="aspect" value="quente">
+            <label for="quente">Quentes</label><br>
+            <input type="radio" id="fria" name="aspect" value="fria">
+            <label for="fria">Frias</label><br>
+            <input type="radio" id="ambas" name="aspect" value="ambas">
+            <label for="ambas">Ambas</label>
+            <br><br><br>
+
+            <label for="theme"><b>Selecione o tema da Paleta</b>:<br></label>
+            <select id="p_theme" name="theme">
+                <option value="claro">Claro</option>
+                <option value="escuro">Escuro</option>
+                <option value="colorido">Colorido</option>
+                <option value="degrade">Degrade</option>
+            </select>
+            <br><br><br>
+
+            <label for="pname"><b>Nome da Paleta</b>:</label>
+            <input type="text" id="p_name" name="nome_paleta" required>
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
