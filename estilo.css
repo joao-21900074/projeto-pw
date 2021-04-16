@@ -194,3 +194,8 @@ body {
 #TdC_tec thead tr th{
     font-weight: bold;
 }
+
+#teo_lay img{
+    width: 25%;
+    height: auto;
+}
