@@ -1,0 +1,196 @@
+/*Estilo Geral*/
+
+body {
+    background-color: whitesmoke;
+}
+
+/*Estilo da Página - Teoria de Cores*/
+
+#top_about_colors{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.layout_2colunas {
+    display: flex;
+    text-align: center;
+}
+
+.colunas {
+    flex: 50%;
+    padding: 10px;
+}
+
+.left_rgbimage{
+    float: left;
+}
+
+.left_rgbimage img{
+    border-radius: 10%;
+    position: relative;
+    animation-name: pop;
+    animation-duration: 3s;
+}
+
+
+.right_cmykimage{
+    float: right;
+}
+
+.right_cmykimage img{
+    border-radius: 10%;
+    position: relative;
+    animation-name: pop;
+    animation-duration: 3s;
+}
+
+@keyframes pop{
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+#esquerda_frias {
+    background-color: cyan;
+}
+
+.cyan_button {
+    background-color: rgb(0, 255, 255);
+    height: 153px;
+    width: 153px;
+    border: 5px solid black;
+    cursor: pointer;
+}
+
+.blue_button {
+    background-color: rgb(0, 0, 255);
+    height: 153px;
+    width: 153px;
+    border: 5px solid black;
+    cursor: pointer;
+}
+
+.green_button {
+    background-color: rgb(0, 255, 0);
+    height: 153px;
+    width: 153px;
+    border: 5px solid black;
+    cursor: pointer;
+}
+
+#direita_quentes {
+    background-color: yellow;
+}
+
+.yellow_button {
+    background-color: rgb(255, 255, 0);
+    height: 153px;
+    width: 153px;
+    border: 5px solid black;
+    cursor: pointer;
+}
+
+.orange_button {
+    background-color: rgb(255, 165, 0);
+    height: 153px;
+    width: 153px;
+    border: 5px solid black;
+    cursor: pointer;
+}
+
+.red_button {
+    background-color: rgb(255, 0, 0);
+    height: 153px;
+    width: 153px;
+    border: 5px solid black;
+    cursor: pointer;
+}
+
+#bottom_about_palletes{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#text_palletes{
+    margin: auto;
+}
+
+.flex_6imgs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex_6imgs img{
+    width: 50%;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .layout_2colunas {
+        flex-direction: column;
+    }
+
+    #text_rgb{
+        margin-top: -73px;
+    }
+
+    #text_cmyk{
+        margin-top: -73px;
+    }
+
+    .flex_6imgs{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    .flex_6imgs img{
+        width: 100%;
+        height: auto;
+    }
+
+    .red_button{
+        margin-top: 5px;
+    }
+
+    .green_button{
+        margin-top: 5px;
+    }
+}
+
+/*Estilo da Página - Adicionar Paleta*/
+
+.box_hash {
+    position: relative;
+}
+
+.hex_code {
+    display: block;
+    padding-left: 12px;
+}
+
+.hashtag_fixo {
+    position: absolute;
+    display: block;
+    left: 5px;
+    top: 2px;
+}
+
+/*Estilo da Página - Sobre o Site*/
+
+#TdC_tec, th{
+    border: 1px solid;
+    text-align: left;
+    font-weight: normal;
+}
+
+#TdC_tec thead tr th{
+    font-weight: bold;
+}
