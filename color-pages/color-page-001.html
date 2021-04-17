@@ -1,16 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <main>
-        <div id="color-pallet">
-            <div class="color"></div>
-        </div>
+    <header>
+        <h1>Color Palettes</h1>
+        <nav id="navbar">
+            <ul>
+                <li><a class="nav-link" href="../index.html">Home</a></li>
+                <li><a class="nav-link" href="#">Criar</a></li>
+                <li><a class="nav-link" href="#">Teoria</a></li>
+                <li><a class="nav-link" href="#">Sobre</a></li>
+                <li><a class="nav-link" href="#">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="colorpage-main">
+
+        <section id="palette-info">
+
+            <h2>Paleta - 0001</h2>
+            <h3>Criada por Cristopher</h3>
+
+            <section id="color-itens">
+                <article class="color-item">
+                    <svg>
+                        <rect fill="#eeebdd" width="200px" height="200px"></rect>
+                    </svg>
+                    <p>#eeebdd</p>
+                    <p>rgb(238,235,221)</p>
+                    <p>hsl(49,33,90)</p>
+                </article>
+
+                <article class="color-item">
+                    <svg>
+                        <rect fill="#811515" width="200px" height="200px"></rect>
+                    </svg>
+                    <p>#811515</p>
+                    <p>rgb(129,21,21)</p>
+                    <p>hsl(0,72,29)</p>
+                </article>
+
+                <article class="color-item">
+                    <svg>
+                        <rect fill="#630e0d" width="200px" height="200px"></rect>
+                    </svg>
+                    <p>#630e0d</p>
+                    <p>rgb(99,14,13)</p>
+                    <p>hsl(0,76,21)</p>
+                </article>
+
+                <article class="color-item">
+                    <svg>
+                        <rect fill="#1b1717" width="200px" height="200px"></rect>
+                    </svg>
+                    <p>#eeebdd</p>
+                    <p>rgb(27,23,23)</p>
+                    <p>hsl(0,8,9)</p>
+                </article>
+            </section>
+        </section>
+
+        <aside id="index-aside">
+            <section class="aside-index-elements" id="palette-rank">
+                <h2>Top 5 Paletas <i class="fas fa-trophy"></i></h2>
+                <a href="#">Paleta - 0002</a>
+                <a href="#">Paleta - 0004</a>
+                <a href="#">Paleta - 0001</a>
+                <a href="#">Paleta - 0010</a>
+                <a href="#">Paleta - 0008</a>
+            </section>
+
+            <section class="aside-index-elements" id="palette-categories">
+                <h2>Categorias</h2>
+                <a href="#">Darkmode</a>
+                <a href="#">Lightmode</a>
+                <a href="#">Flat Colors</a>
+                <a href="#">Hot Colors</a>
+                <a href="#">Cold Colors</a>
+                <a href="#">Spring Colors</a>
+                <a href="#">Summer Colors</a>
+                <a href="#">Fall Colors</a>
+                <a href="#">Winter Colors</a>
+            </section>
+        </aside>
+
     </main>
+
+    <footer>
+        <p>Projeto de Programação Web 2021</p>
+    </footer>
 </body>
+
 </html>
