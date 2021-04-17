@@ -236,6 +236,24 @@ body {
 }
 
 #teo_lay img{
-    width: 25%;
-    height: auto;
+    float: left;
+}
+
+#teo_lay_exp{
+    margin-left: 400px;
+}
+
+#teo_lay_exp li{
+    margin: 55px 0;
+}
+
+@media screen and (max-width: 900px) {
+    #TdC{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #teo_lay_exp{
+        margin-left: 0;
+    }
 }

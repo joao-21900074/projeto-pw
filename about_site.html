@@ -18,11 +18,11 @@
 
         <p>Foram criadas 5 páginas ao todo:</p>
         <ul>
-            <li>Inicial</li>
+            <li>Home</li>
             <li>Paleta</li>
             <li>Teoria das Cores</li>
             <li>Adicionar Paleta</li>
-            <li>Sobre o Site</li>
+            <li>Técnicas Usadas</li>
         </ul>
         <br>
     </header>
@@ -30,29 +30,58 @@
     <main>
         <h3>Página - Teoria das Cores</h3>
 
-        <p name="TdC">
-            Nesta pagina encontra-se conteúdo sobre RGB e CMYK, identificando a diferença entre os dois padrões,
-            contém também informações sobre as cores frias, cores quentes e exemplos de paletas.
-            <br>
-            O Layout utilizado foi de 2 colunas usando flexbos, para separar os temas. 
+        <section id="TdC">
+            <p>
+                Nesta pagina encontra-se conteúdo sobre RGB e CMYK, identificando a diferença entre os dois padrões,
+                contém também informações sobre as cores frias, cores quentes e exemplos de paletas.
+                <br>
+                O Layout utilizado foi de 2 colunas usando flexbox, para separar os temas.
+                Media queries foram necessários, para quando o site for aberto em celular, as colunas ficarem empiladas.
             <figure id="teo_lay">
                 <img src="images/layout_teoria.jpeg">
             </figure>
-            <br>
-            Um media query foi necessário, para quando o site for aberto em celular, as colunas ficarem empiladas.
-        </p>
+            </p>
+
+            <ul id="teo_lay_exp">
+                <li>Secção 1, header + nav da página.</li>
+
+                <li>Nas secções A1 e A2, divisão de 2 colunas no layout.<br>
+                    Foram utilizados 2 imagens com animação de transform.<br>
+                    Também foi necessário ajustar o texto com 2 media queries.</li>
+
+                <li>Nas secções B1 e B2, mantém-se a divisão de 2 colunas no layout.<br>
+                    Os botões se ajustam conforme o tamanho da tela para ficar empilados.<br>
+                    Na continuação do projeto, após clicar em um dos botões
+                    será alterado o plano de fundo e o texto sobre a cor.</li>
+
+                <li>Secção 2, section com introdução para galeria de fotos</li>
+
+                <li>Secção 3, galeria de fotos.<br>
+                    Utilizado um flexbox com 6 imagens, onde são responsivas ao tamanho da tela.<br>
+                    Foi utilizado uma animação de fadein, das imagens.</li>
+            </ul>
+
+        </section>
 
         <br>
 
         <h3>Página - Adicionar Paleta</h3>
 
         <p name="AP">
-            Um formulário onde visitante pode criar a sua própria paleta.
-            <br>
-            Foram utlizados os tipos de inputs: color, number, text, radio, select.
+            Um formulário onde visitantes podem criar a sua própria paleta.<br>
+            Foram utlizados os tipos de inputs: color, number, text, radio, select.<br><br>
+
+            Não foi definido nenhum layout especifíco para esta página.<br>
+            Porém foi levado em consideração deixar o conteúdo todo a direita
+            para quando for visualizado em telas menores.<br><br>
+
+            Uma técnica utilizada no input text do código hex, foi deixar em absoluto o simbolo de "#".<br>
+            Além de considerar o padrão de 6 letras e/ou numeros, com um pattern.
         </p>
 
         <br>
+
+        <h3>Tabela com Características</h3>
 
         <table id="table_tec">
             <thead>
@@ -79,7 +108,7 @@
 
                 <tr>
                     <th>Etiquetas</th>
-                    <th>HTML5, header, nav ,main, section, figure, footer, aside.</th>
+                    <th>HTML5, header, nav, main, section, figure, footer, aside.</th>
                 </tr>
             </tbody>
         </table>
