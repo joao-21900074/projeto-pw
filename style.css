@@ -672,12 +672,17 @@ footer > p {
 
 #table_tec{
     margin: 0 auto;
+    border: 1px solid red;
+    border-collapse: collapse;
 }
 
-#TdC_tec, th{
-    border: 1px solid;
-    text-align: left;
-    font-weight: normal;
+td, th {
+    border: 2px solid #777;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
 
 #table_section > h3{

@@ -19,16 +19,16 @@
                 <li><a class="nav-link" href="./index.html">Home</a></li>
                 <li><a class="nav-link" href="./form.html">Criar</a></li>
                 <li><a class="nav-link" href="./about_colors.html">Teoria</a></li>
-                <li><a class="nav-link active" href="./about_site.html">Sobre</a></li>
+                <li><a class="nav-link" href="./about_site.html">Sobre</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="all_about_site">
-        <section id="start_top">
-
+    <main>
+        <section>
+    
             <h2>Estrutura de Páginas</h2>
-
+    
             <p>Foram criadas 5 páginas ao todo:</p>
             <ul>
                 <li>Home</li>
@@ -40,14 +40,13 @@
             <br>
         </section>
 
+        <h3>Página - Teoria das Cores</h3>
+
         <section id="TdC">
-
-            <h3>Página - Teoria das Cores</h3>
-
             <p>
                 Nesta pagina encontra-se conteúdo sobre RGB e CMYK, identificando a diferença entre os dois padrões,
-                contém também informações sobre as cores frias, cores quentes e exemplos de paletas.</p>
-            <p>
+                contém também informações sobre as cores frias, cores quentes e exemplos de paletas.
+                <br>
                 O Layout utilizado foi de 2 colunas usando flexbox, para separar os temas.
                 Media queries foram necessários, para quando o site for aberto em celular, as colunas ficarem empiladas.
             <figure id="teo_lay">
@@ -78,78 +77,53 @@
 
         <br>
 
-        <section id="AP">
+        <h3>Página - Adicionar Paleta</h3>
 
-            <h3>Página - Adicionar Paleta</h3>
+        <p name="AP">
+            Um formulário onde visitantes podem criar a sua própria paleta.<br>
+            Foram utlizados os tipos de inputs: color, number, text, radio, select.<br><br>
 
-            <p>
-                Um formulário onde visitantes podem criar a sua própria paleta.<br>
-                Foram utlizados os tipos de inputs: color, number, text, radio, select.</p>
+            Não foi definido nenhum layout especifíco para esta página.<br>
+            Porém foi levado em consideração deixar o conteúdo todo a direita
+            para quando for visualizado em telas menores.<br><br>
 
-            <p>Não foi definido nenhum layout especifíco para esta página.
-                Porém foi levado em consideração uma responsividade.<br></p>
-
-            <p>Uma técnica utilizada no input text do código hex, foi deixar em absoluto o simbolo de "#".<br>
-                Além de considerar o padrão de 6 letras e/ou numeros, com um pattern.
-            </p>
-        </section>
+            Uma técnica utilizada no input text do código hex, foi deixar em absoluto o simbolo de "#".<br>
+            Além de considerar o padrão de 6 letras e/ou numeros, com um pattern.
+        </p>
 
         <br>
 
-        <section id="table_section">
-            <h3>Tabela com Características e Quantidades</h3>
+        <h3>Tabela com Características</h3>
 
-            <table id="table_tec">
-                <thead>
-                    <tr>
-                        <th>Características</th>
-                        <th>Descrição e Quantidades</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Layout</th>
-                        <th>Construido usando Flexbox e GRID para definir layouts.</th>
-                    </tr>
+        <table id="table_tec">
+            <thead>
+                <tr>
+                    <th>Características</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Layout</th>
+                    <th>Construido usando Flexbox</th>
+                </tr>
 
-                    <tr>
-                        <th>Responsividade</th>
-                        <th>Media Queries, de variados tamanhos tentando englobar o máximo de aparelhos.</th>
-                    </tr>
+                <tr>
+                    <th>Responsividade</th>
+                    <th>Media Queries</th>
+                </tr>
 
-                    <tr>
-                        <th>Seletores</th>
-                        <th>Foram usados seletores de </th>
-                    </tr>
+                <tr>
+                    <th>Seletores</th>
+                    <th>Foram usados seletores de </th>
+                </tr>
 
-                    <tr>
-                        <th>Etiquetas</th>
-                        <th>HTML5, header, nav, main, section, figure, footer, aside.</th>
-                    </tr>
-
-                    <tr>
-                        <th>Animações</th>
-                        <th>Utilizado 2. Transform e opacidade na página de teoria das cores.</th>
-                    </tr>
-
-                    <tr>
-                        <th>Páginas do website</th>
-                        <th>Um total de 17 páginas. Onde 5 são as páginas principais para navegação, e 12 para paletas
-                            individuais.</th>
-                    </tr>
-
-                    <tr>
-                        <th>Imagens utilizadas</th>
-                        <th>Utilizado 8 imagens, todas localizadas na pagina de teoria das cores.</th>
-                    </tr>
-
-                    <tr>
-                        <th>Links externos</th>
-                        <th>3 links utilizados, para galeria de exemplos de paletas e imagens RGB e CMYK.</th>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+                <tr>
+                    <th>Etiquetas</th>
+                    <th>HTML5, header, nav, main, section, figure, footer, aside.</th>
+                </tr>
+            </tbody>
+        </table>
     </main>
 
     <footer>
