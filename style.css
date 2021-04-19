@@ -653,6 +653,10 @@ footer > p {
     width: 80%;
 }
 
+#estrutura-page ul{
+    margin-left: 30px;
+}
+
 #start_top{
     margin-top: 15px;
 }
@@ -718,6 +722,7 @@ tr:nth-child(even) {
     padding-top: 25px;
 }
 
+
 #AP p{
     padding: 7px 0px 15px 25px;
 }
@@ -734,6 +739,6 @@ tr:nth-child(even) {
 
     #teo_lay_exp > li{
         padding-top: 0px;
-        margin: 0px 0px 0px 0px;
+        margin: 0px;
     }
 }
