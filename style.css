@@ -467,8 +467,72 @@ footer > p {
         margin-top: 5px;
     }
 }
+/* +++++++++++++++++++++++++++++++++++  */
+/* Estilo da Página - Adicionar Paleta */
+/* +++++++++++++++++++++++++++++++++++  */
 
-/*Estilo da Página - Adicionar Paleta*/
+#body-createpalette {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#body-createpalette header {
+    grid-column: 1 / 5;
+}
+
+#body-createpalette footer {
+    grid-column: 1 / 5;
+}
+
+#main-createpalette {
+    grid-column: 1 / 4;
+    padding: 0px 20px;
+}
+
+#intro-createpalette {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+#intro-createpalette > h2{
+    font-size: 30px;
+    border-bottom: 3px solid orange;
+    padding: 0px 10px;
+    margin-bottom: 7px;
+}
+
+#palette-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#palette-form > fieldset {
+    padding: 10px 10px;
+    margin-bottom: 15px;
+}
+
+#palette-form > fieldset > legend {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+
+#palette-form fieldset {
+    border: 2px solid #bbb;
+    border-radius: 5px;
+}
+
+.form-block {
+    display: block;
+}
+
+.color-fieldset {
+    margin-bottom: 15px;
+    padding: 10px 5px;
+}
 
 .box_hash {
     position: relative;
@@ -484,6 +548,20 @@ footer > p {
     display: block;
     left: 5px;
     top: 2px;
+}
+
+.info-input-group {
+    margin-bottom: 10px;
+}
+
+#palette-form input[type="submit"] {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 18px;
+    border: 2px solid #999;
+    border-radius: 10px;
+    background: #eee;
 }
 
 /*Estilo da Página - Sobre o Site*/
