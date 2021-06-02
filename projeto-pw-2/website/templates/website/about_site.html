@@ -1,31 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'website/base2.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="images/about.ico">
-    <link rel="stylesheet" href="./style.css">
+{% block link %}
+    <link rel="shortcut icon" type="image/x-icon" href="../../static/website/images/about.ico">
+{% endblock %}
+
+{% block title %}
     <title>Sobre o Site</title>
-</head>
+{% endblock %}
 
-<body>
+{% block li %}
+    <li><a class="nav-link" href="./about_colors.html">Teoria</a></li>
+    <li><a class="nav-link active" href="./about_site.html">Sobre</a></li>
+    <li><a class="nav-link" href="./contatos.html">Contatos</a></li>
+    <li><a class="nav-link" href="./comentarios.html">Comentários</a></li>
+{% endblock %}
 
-    <header>
-        <h1>Color Palettes</h1>
-        <nav id="navbar">
-            <ul>
-                <li><a class="nav-link" href="./index.html">Home</a></li>
-                <li><a class="nav-link" href="./form.html">Criar</a></li>
-                <li><a class="nav-link" href="./about_colors.html">Teoria</a></li>
-                <li><a class="nav-link" href="./about_site.html">Sobre</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main id="all_about_site">
-        <section id="estrutura-page">
+{% block main %}
+    <section id="estrutura-page">
             <h2>Estrutura de Páginas</h2>
 
             <p>Foram criadas 5 páginas ao todo:</p>
@@ -39,38 +30,6 @@
             <br>
         </section>
 
-        <section id="layout_principal">
-            <h3>Layout Principal</h3>
-
-            <p>
-                Esse Layout é a principal utilizada pelo site na Página Home e nas Páginas de cada paleta.
-            </p>
-            
-            <p>
-                Na página Home, o foco é mostrar todas a paletas criadas no momento.
-            </p>
-
-            <p>
-                Ao entrar em cada paleta encontra-se toda a informação sobre a mesma.
-            </p>
-
-            <ul id="lay_exp">
-                <li>Secção 1, header + nav da página.</li>
-
-                <li>Na secção A, a página Home, tem o display de várias paletas. </li>
-
-                <li>Nas secções B1 e B2, mantém-se a divisão de 2 colunas no layout.<br>
-                    Os botões se ajustam conforme o tamanho da tela para ficar empilados.<br>
-                    Na continuação do projeto, após clicar em um dos botões
-                    será alterado o plano de fundo e o texto sobre a cor.</li>
-
-                <li>Secção 2, section com introdução para galeria de fotos</li>
-            </ul>
-
-            <figure id="">
-                <img src="images/layoutdesktop-01.png">
-            </figure>
-
         </section>
 
         <section id="TdC">
@@ -83,7 +42,7 @@
                 O Layout utilizado foi de 2 colunas usando flexbox, para separar os temas.
                 Media queries foram necessários, para quando o site for aberto em celular, as colunas ficarem empiladas.
             <figure id="teo_lay">
-                <img src="images/layout_teoria.jpeg">
+                <img src="../../static/website/images/layout_teoria.jpeg">
             </figure>
             </p>
 
@@ -131,7 +90,7 @@
 
                     <tr>
                         <th>Seletores</th>
-                        <td>Foram usados seletores de </td>
+                        <td>Foram usados seletores de id, classe, tipo, universal, pseudo-classe.</td>
                     </tr>
 
                     <tr>
@@ -162,12 +121,13 @@
                 </tbody>
             </table>
         </section>
-    </main>
 
-    <footer>
-        <p>Projeto de Programação Web 2021</p>
-    </footer>
-
-</body>
-
-</html>
+        <section id="page-video">
+            <h2>Navegação da nossa página</h2>
+            <p>Neste vídeo, mostramos como é a navegação da nossa página.</p>
+            <iframe width="800" height="600" src="https://www.youtube.com/embed/apLd50IJnh0" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+{% endblock %}
